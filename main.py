@@ -4,6 +4,7 @@ file_name = "contacts.csv"
 try: 
     contacts_file = open(file_name, "r")
     contacts_file.close()
+except:
 
 print ("Contact Library")
 
