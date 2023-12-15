@@ -1,6 +1,10 @@
 
 file_name = "contacts.csv"
 
+try: 
+    contacts_file = open(file_name, "r")
+    contacts_file.close()
+
 print ("Contact Library")
 
 def contacts_library():
