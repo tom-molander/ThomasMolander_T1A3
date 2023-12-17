@@ -1,4 +1,4 @@
-from functions import add_contact
+from functions import add_contact, view_contact
 
 file_name = "contacts.csv"
 
@@ -6,6 +6,7 @@ try:
     contacts_file = open(file_name, "r")
     contacts_file.close()
 except:
+    print("Block")
 
 print ("Contact Library")
 
@@ -25,15 +26,14 @@ users_selection = ""
 while users_selection != "C":
     users_selection = contacts_library()
     if (users_selection == "A"):
-        print ("New Contact")
-        print (input("Name: "))
-        print (input("Surname: "))
-        print (input("Phone: "))
-        print (input("Email: "))
+        add_contact(file_name)
+
     elif (users_selection == "D"):
         print("Hello World")
+
     elif (users_selection == "V"):
-        print("Here is your Contacts Library")
+        print ("View Contact")
+
     elif (users_selection == "E"):
         print("Enter contact name you want to edit")
     elif (users_selection =="C"):
