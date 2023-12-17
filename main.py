@@ -32,7 +32,7 @@ while users_selection != "C":
         delete_contact(file_name)
 
     elif (users_selection == "V"):
-        print ("View Contact")
+        print("View contact")
 
     elif (users_selection == "E"):
         print("Enter contact name you want to edit")

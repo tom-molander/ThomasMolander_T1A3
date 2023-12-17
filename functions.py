@@ -26,4 +26,9 @@ def delete_contact(file_name):
 
 
 def view_contact(file_name):
-    pass
+    print("Here is your contacts library: ")
+    with open(file_name, "r") as f:
+        reader = csv.reader(f)
+        reader.__next__()
+        for row in reader:
+            print(" ".join(row))
