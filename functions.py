@@ -12,5 +12,15 @@ def add_contact(file_name):
         writer.writerow([contact_name, contact_phone, contact_email])
 
 def delete_contact(file_name):
-    pass
-        
+    
+    contact_name = input ("Enter name of contact to delete: ")
+    contacts_library = []
+    with open(file_name, "r") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if (contact_name != row[0]):
+                contacts_library.append(row)
+    with open(file_name, "w") as f:
+        writer = csv.writer(f)
+        writer.writerows(contacts_library)
+
