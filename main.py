@@ -29,7 +29,7 @@ while users_selection != "C":
         add_contact(file_name)
 
     elif (users_selection == "D"):
-        print("Hello World")
+        delete_contact(file_name)
 
     elif (users_selection == "V"):
         print ("View Contact")

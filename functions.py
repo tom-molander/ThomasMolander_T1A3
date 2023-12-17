@@ -3,7 +3,7 @@ import csv
 def add_contact(file_name):
     print("Create new contact: ")
 
-    contact_name = input("First Name: ")
+    contact_name = input("Contact Name: ")
     contact_phone = input("Phone: ")
     contact_email = input("Email: ")
 
