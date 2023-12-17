@@ -24,3 +24,6 @@ def delete_contact(file_name):
         writer = csv.writer(f)
         writer.writerows(contacts_library)
 
+
+def view_contact(file_name):
+    pass
