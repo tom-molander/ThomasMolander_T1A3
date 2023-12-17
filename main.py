@@ -35,7 +35,8 @@ while users_selection != "C":
         view_contact(file_name)
 
     elif (users_selection == "E"):
-        print("Enter contact name you want to edit")
+        edit_contact(file_name)
+        
     elif (users_selection =="C"):
         break
     else: 
