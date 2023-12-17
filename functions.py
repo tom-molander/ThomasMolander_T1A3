@@ -32,3 +32,7 @@ def view_contact(file_name):
         reader.__next__()
         for row in reader:
             print(" ".join(row))
+
+
+def edit_contact(file_name):
+    pass
