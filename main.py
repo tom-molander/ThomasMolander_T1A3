@@ -8,7 +8,7 @@ try:
 except:
     print("Block")
 
-print ("Contact Library")
+print("Contact Library")
 
 def contacts_library():
     print('Enter "A" to add a new contact to your library')
@@ -20,26 +20,22 @@ def contacts_library():
     selection = input("Please enter your selection: ")
     return selection
 
-
 users_selection = ""
 
 while users_selection != "C":
     users_selection = contacts_library()
-    if (users_selection == "A"):
+    if users_selection == "A":
         add_contact(file_name)
-
-    elif (users_selection == "D"):
+    elif users_selection == "D":
         delete_contact(file_name)
-
-    elif (users_selection == "V"):
+    elif users_selection == "V":
         view_contact(file_name)
-
-    elif (users_selection == "E"):
+    elif users_selection == "E":
         edit_contact(file_name)
-        
-    elif (users_selection =="C"):
+    elif users_selection == "C":
         break
-    else: 
-        print ("Sorry I don't recognise that command, can you try again?")
+
+    else:
+        print("Sorry, I don't recognize that command. Please try again.")
 
         
