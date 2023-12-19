@@ -72,7 +72,7 @@ def edit_contact(file_name):
         writer.writerows(contacts_library)
 
     if len(contacts_library) > 0:
-        print(f"Contact '{contact_name}' has been updated.")
+        print(f"Could not find '{contact_name}' in your library.")
     else:
         print(f"Could not find '{contact_name}' in your library.")
 
