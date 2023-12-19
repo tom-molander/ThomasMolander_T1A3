@@ -5,8 +5,8 @@ file_name = "contacts.csv"
 try: 
     contacts_file = open(file_name, "r")
     contacts_file.close()
-except:
-    print("Block")
+except FileNotFoundError:
+    pass
 
 print("Contact Library")
 
