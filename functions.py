@@ -11,9 +11,13 @@ def add_contact(file_name):
         if contact_phone.isdigit():
             break
         else: 
-            print("Phone number must be numerical")
-    contact_email = input("Email: ")
-
+            print("Phone number must be entered in numbers")
+    while True:
+        contact_email = input("Email: ")
+        if "@" in contact_email:
+            break
+        else: 
+            print('Email must contain "@" symbol, please enter again')
     with open(file_name, "a") as f:
         writer = csv.writer(f)
         writer.writerow([contact_name, contact_phone, contact_email])
