@@ -6,7 +6,12 @@ def add_contact(file_name):
     print("Create new contact: ")
 
     contact_name = input("Contact Name: ")
-    contact_phone = input("Phone: ")
+    while True:
+        contact_phone = input("Phone: ")
+        if contact_phone.isdigit():
+            break
+        else: 
+            print("Phone number must be numerical")
     contact_email = input("Email: ")
 
     with open(file_name, "a") as f:
