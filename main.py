@@ -6,7 +6,10 @@ try:
     contacts_file = open(file_name, "r")
     contacts_file.close()
 except FileNotFoundError:
-    pass
+    contacts_library = open(file_name, "w")
+    contacts_library.write("Name, Phone, Email\n")
+    contacts_library.close()
+
 
 print("Contact Library")
 
@@ -36,6 +39,6 @@ while users_selection != "C":
         break
 
     else:
-        print("Sorry, I don't recognize that command. Please try again.")
+        print("Sorry, I don't recognise that command. Please try again.")
 
         
