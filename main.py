@@ -12,14 +12,14 @@ except FileNotFoundError:
     contacts_library.close()
 
 
-print("Contact Library")
+print(f"{fg('blue')}{bg('white')}Contact Library")
 
 def contacts_library():
-    print('Enter "A" to add a new contact to your library')
-    print('Enter "D" to delete a contact from your library')
-    print('Enter "V" to view your contacts library')
-    print('Enter "E" to edit a contact')
-    print('Enter "C" to close')
+    print(f'{fg('black')}{bg('white')}Enter "A" to add a new contact to your library')
+    print(f'{fg('black')}{bg('white')}Enter "D" to delete a contact from your library')
+    print(f'{fg('black')}{bg('white')}Enter "V" to view your contacts library')
+    print(f'{fg('black')}{bg('white')}Enter "E" to edit a contact')
+    print(f'{fg('black')}{bg('white')}Enter "C" to close')
 
     selection = input("Please enter your selection: ")
     return selection
@@ -40,6 +40,6 @@ while users_selection != "C":
         break
 
     else:
-        print("Sorry, I don't recognise that command. Please try again.")
+        print(f"{fg('red')}{bg('white')}Sorry, I don't recognise that command. Please try again.{attr('reset')}")
 
         
