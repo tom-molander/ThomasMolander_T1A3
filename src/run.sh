@@ -13,4 +13,4 @@ source .todo-venv/bin/activate
 pip3 install colored
 
 #To use application
-python3 main.py
+python3 src/main.py
