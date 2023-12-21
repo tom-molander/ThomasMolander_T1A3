@@ -1,6 +1,6 @@
-/docs
+docs/
 ppt/
-/__pycache__
+__pycache__/
 contacts.csv
 requirements.txt
 .venv

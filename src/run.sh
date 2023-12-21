@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#link to download python 3
-download python 3 https://www.python.org/downloads/
+#check if python is installed 
+python3 --version
 
 
 #check if venv exists
-python3 -m venv .todo-venv
+python3 -m venv .venv
 #activate virtual environment
-source .todo-venv/bin/activate
+source .venv/bin/activate
 
 #packages
 pip3 install colored
