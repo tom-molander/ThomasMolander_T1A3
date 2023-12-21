@@ -3,6 +3,7 @@
 ### Helpful sources to implement this code:
 
 https://stackoverflow.com/
+
 CoderAcadmey Lessons & Learning Materials
 
 ### Soure Control Repository:
@@ -15,9 +16,7 @@ The program has been adhered too in PEP 8 styling.
 
 https://peps.python.org/pep-0008/
 
-R6 Develop a list of features that will be included in the application. It must include:
-
-### Features
+### Features & Functions
 
 The terminal application contains 5 features including:
 
@@ -26,8 +25,6 @@ The terminal application contains 5 features including:
 - Delete Contact
 - View Contacts
 - Edit Contact
-
-describe each feature
 
 **Contacts Library** is the primary feature of the terminal application which will print out as list of options as a menu to the user and wait for input from the user. Once input is given from the user this will call for the other features to run and begin to be utilised.
 
@@ -45,7 +42,7 @@ The contacts library will utilise variables known as "user selection", "contacts
 
 An implementation plan was created through a trello board. Snippets of progress below:
 
-![Board](Docs/Screenshots/Design_Board_1.png)
+![Board](docs/Screenshots/Design_Board_1.png)
 ![Board](docs/Screenshots/Design%20Board%202.png)
 ![Board](docs/Screenshots/Design%20Board%203.png)
 ![Board](docs/Screenshots/Design%20Board%204.png)
