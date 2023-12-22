@@ -1,5 +1,9 @@
 # Tom Molander - Terminal Application
 
+Presentation Video:
+
+https://www.veed.io/view/6dcb680a-abeb-4350-96f2-3f011a0915b3?panel=share
+
 ### Helpful sources to implement this code:
 
 https://stackoverflow.com/
