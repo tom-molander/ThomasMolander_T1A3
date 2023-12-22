@@ -72,7 +72,9 @@ def edit_contact(file_name):
             if len(row) > 0 and contact_name != row[0]:
                 contacts_library.append(row)
             elif len(row) > 0:
-                updated_row = [contact_name, input(f"{fg('black')}{bg('white')}Enter new phone number: "), input(f"{fg('black')}{bg('white')}Enter new email: ")]
+                updated_row = [contact_name, 
+                               input(f"{fg('black')}{bg('white')}Enter new phone number: "),
+                               input(f"{fg('black')}{bg('white')}Enter new email: ")]
                 contacts_library.append(updated_row)
                 contact_found = True
 
